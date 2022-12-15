@@ -1,0 +1,40 @@
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+}
+
+div.jumbotron {
+  text-align: center;
+  background-color: lavender;
+}
+
+h1#jumbotron {
+  font-size: 400%;
+  color: darkgreen;
+}
+
+body {
+  text-align: center;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+input {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+h3 {
+  margin-top: 2%;
+}
+
+a {
+  text-decoration: underline;
+}

@@ -37,5 +37,10 @@ namespace ToDoList.Models
     {
       Items.Add(item);
     }
+
+    public static void DeleteItem(int categoryId, int itemId)
+    {
+      _instances[categoryId - 1].Items.RemoveAt(itemId - 1);
+    }
   }
 }

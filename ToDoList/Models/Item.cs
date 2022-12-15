@@ -30,5 +30,10 @@ namespace ToDoList.Models
     {
       return _instances[searchId-1];
     }
+
+    public static void Delete(int searchId)
+    {
+      _instances.RemoveAt(searchId - 1);
+    }
   }
 }

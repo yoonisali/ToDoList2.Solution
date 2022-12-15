@@ -6,6 +6,9 @@
 <h2>@Model["item"].Description</h2>
 <h3>Category: @Model["category"].Name</h3>
 
-<a href='/categories/@Model["category"].Id/items/@Model["item"].Id'>Delete this item</a><br>
+<form action='/categories/@Model["category"].Id/items/@Model["item"].Id' method="post">
+  <button type="submit">Delete this Item!</button>
+</form>
+
 <a href='/categories/@Model["category"].Id/items/new'>Add another item</a><br>
 <a href='/categories'>View all categories</a>

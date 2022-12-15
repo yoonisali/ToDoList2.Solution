@@ -56,7 +56,7 @@ namespace ToDoList.Controllers
       Item.Delete(itemId);
       Category.DeleteItem(categoryId, itemId);
       
-      return RedirectToAction("Index");
+      return RedirectToAction("Show", new { id = categoryId });
     }
   }
 }

@@ -34,6 +34,8 @@ namespace ToDoList.Models
     public static void Delete(int searchId)
     {
       _instances.RemoveAt(searchId - 1);
+      // Item deleteItem = Item.Find(searchId);
+      // _instances.Remove(deleteItem);
     }
   }
 }

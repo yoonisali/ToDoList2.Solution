@@ -40,7 +40,6 @@ namespace ToDoList.Models
 
     public static void DeleteItem(int categoryId, int itemId)
     {
-      
       _instances[categoryId - 1].Items.RemoveAt(itemId - 1);
     }
   }

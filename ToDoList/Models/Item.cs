@@ -7,7 +7,7 @@ namespace ToDoList.Models
   public class Item
   {
     public string Description { get; set; }
-    public int Id { get; }
+    public int Id { get; set; }
     private static List<Item> _instances = new List<Item> { };
 
     public Item(string description)
@@ -34,8 +34,10 @@ namespace ToDoList.Models
     public static void Delete(int searchId)
     {
       _instances.RemoveAt(searchId - 1);
-      // Item deleteItem = Item.Find(searchId);
-      // _instances.Remove(deleteItem);
+      for (int index = searchId - 1; index < _instances.Count; index++)
+      {
+        _instances[index].Id -= 1;
+      }
     }
   }
 }
